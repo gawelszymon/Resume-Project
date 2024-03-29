@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Szymon Gaweł Website</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="/img/header_img.ico" />
+
+  <!-- ładowanie bibliotek bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+
+  <!-- ładowanie biblioteki jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script src="/js/app.js"></script>
+
+</head>
+<body>
+<!--
+ogólnie mechanizm bootstrap pozwala na responsywne zachowywanie sie strony
+strona dla konkretnych rozdzielczości podzielona jest na 12 kolumn
+w klasie kontenera div deklaruje jaką ilość kolumn zajmować ma dany fragment
+
+klasa sm (small) definiuje układ kolumn dla małych ekranów o szerokośc
+wiekszej lub równej niż 576 pikseli
+
+klasa md (medium) dla szerokości większej lub równej niż 768 pikseli
+
+klasa lg (large) dla szerokości większej lub równej niż 992 piksele
+
+z tego co rozumiem to dla szerokości mniejszej niż 576 pikseli każdy 1 element
+zajmuje dokładnie całą długość na stronie to znaczy 12 kolumn
+-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Main Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li id= "main_id" class="nav-item">
+          <a class="nav-link active" href="projects.html">Projects</a>
+        </li>
+        <!--<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+        <li id="about-me-doesnot-ready" class="nav-item">
+          <a class="nav-link" href="about.html" tabindex="-1" aria-disabled="true">About me</a>
+        </li>
+      </ul>
+      <!--<form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>-->
+    </div>
+  </div>
+  <div class="col-md-1">
+    <img class="linkedin_img_class" id="linkedin" src="/img/linkedin.png" alt="img">
+    <img class="github_img_class" id="github" src="/img/github.png" alt="img">
+  </div>
+</nav>
+
+<br />
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-12 mx-auto">
+      <div class="card">
+        <div class="card-header">
+          Main App NBA
+        </div>
+        <div class="card-body">
+          <p class="card-text">Project "Main App NBA" is intended for busy people still interested in the most popular basketball league- NBA. My application presents relevent data and information associated with NBA in a comprehensive way. With a internet connection, you can know evrything current you need to now, with just two clicks.
+
+            To make my app updated I used some functions share by Jsoup library. GUI is created through JavaFX. To make some simplifications, to make my project clear I used logging utility- Log4j. The main goal was to develop my object-oriented programing.</p>
+        </div>
+      </div>
+      <br />
+      <div class="card mt-3">
+        <div class="card-header">
+          My first website
+        </div>
+        <div class="card-body">
+          <p class="card-text">This project let me develop my skills associated with web designing. I wanted to acquaint with essential concept of using "web tools". At that time I wasn't aware of Bootstramp tool, therefore I made my web corresponsive only by CSS. Nowadays I would like to perform more advanced project (using React, node.js, PHP). Due to "My first website" I realized I like that field of IT. You can find that website under the "wisłarząska.pl" (it was not my idea to use polish signs in adress).</p>
+        </div>
+      </div>
+      <br />
+      <div class="card mt-3">
+        <div class="card-header">
+          Selenium testing
+        </div>
+        <div class="card-body">
+          <p class="card-text">I heard about web browser automation (selenium, selenide) from my friend. So during free time I decided to try my forces in that field. Using module webdriver from selenium library in python I coded a simple bot, which was able to move around allegro.pl or sofascore website.</p>
+        </div>
+      </div>
+      <br/>
+      <div class="card mt-3">
+        <div class="card-header">
+          Resume website
+        </div>
+        <div class="card-body">
+          <p class="card-text">Exactly this website is the result of that project. I wanted to create a place where I could represent myself in my own way, which is different than github or linkedin. I'm going to improv, develop this page within my growth of IT abilities. Due to "Resume website" I acquired practical knowledge of using jQuery, JSON format or Bootstrap.</p>
+        </div>
+      </div>
+      <br/>
+      <div class="card mt-3">
+        <div class="card-header">
+          Word Conflict Simulator (project in progress)
+        </div>
+        <div class="card-body">
+          <p class="card-text">Currently I'm focus on developing that project. By "World Conflict Simulator" I purpose to reinforcing my OOP in java.
+            I strive to create an app, which will be
+            simulation, in great simplification, the phenomena of world conflicts. Plan is such that the user by adjusting certain
+            parameters,  could estimate how long the conflict would last and
+            in which direction it will evolve.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+</div>
+
+<script>
+  var my_table = document.getElementById("my-table");
+  var my_table_tbody = my_table.getElementsByTagName('tbody')[0];
+
+  for (let row of my_table_tbody.getElementsByTagName('tr'))  {
+    let rowData = [];
+
+    for (let cell of row.getElementsByTagName('td')) {
+      //cell.innerText = "test";
+      rowData.push(cell.innerText);
+
+      let rowNumber = Array.from(my_table_tbody.getElementsByTagName('tr')).indexOf(row);
+
+      if ((rowNumber % 2 === 0) && (cell.innerText === rowData[1])) {
+        cell.style.fontWeight = "bold";
+      }
+
+      if (cell.innerText === "Jim") {
+        cell.style.color = "green";
+      }
+
+    }
+    console.log(rowData[1] + " " + rowData[2]);
+
+  }
+
+</script>
+
+</body>
+
+</html>

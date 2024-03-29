@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.row {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+#firstSection {
+  border: 2px solid #333; /* Grubość i kolor ramki */
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#secondSection {
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  opacity: 0.8;
+}
+
+#photoSection {
+  margin-right: 2.8em;
+}
+
+#profilPhoto {
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.row {
+  margin-top: 5em;
+}
+
+#my-table td:nth-child(1) {
+  width: 5em;
+}
+
+#my-table td:nth-child(2) {
+  width: 50em;
+}
+
+.card-body {
+  background-color: #f2f2f2;
+}
+
+.card-header {
+  background-color: #f2f2f2;
+  font-size: 1.5em;
+}
+
+.linkedin_img_class {
+  width: 1.5em;
+  height: auto;
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+}
+
+.github_img_class {
+  width: 1.75em;
+  height: auto;
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+}
+
+#linkedin:hover {
+  opacity: 0.75;
+}
+
+#github:hover {
+  opacity: 0.75;
+}
+
+.infoButton {
+  border-radius: 0.4em;
+  padding: 0.25em 0.5em;
+  font-size: 0.8em;
+  background-color: #212529;
+  border-color: #212529;
+  color: white;
+}
+
+.infoButton:hover {
+  opacity: 0.75;
+}
+
+#not_finished_subpage {
+  font-size: 5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+
+
